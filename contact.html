@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get a Quote — TrenchCore | Boulder, CO</title>
+  <meta name="description" content="Request a free estimate from TrenchCore — Boulder's trusted trenching and landscaping company. We respond within 24 hours." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Suez+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav scrolled">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-name">TrenchCore</span>
+        <span class="logo-tag">Boulder, Colorado</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">About Us</a></li>
+        <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <div class="page-hero">
+    <div class="container">
+      <span class="section-label">Free Estimates</span>
+      <h1>Request a Quote</h1>
+      <p>Tell us about your project and we'll follow up within one business day with a free, detailed estimate — no obligation.</p>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- LEFT: Info -->
+        <div class="contact-info">
+          <span class="section-label">Get in Touch</span>
+          <h2>We'd Love to Hear About Your Project</h2>
+          <p>Whether you're planning a new build, dealing with drainage issues, or looking to upgrade your outdoor space — our team is ready to help. Fill out the form and one of our project managers will reach out promptly.</p>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="detail-icon">
+                <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+              </div>
+              <div class="detail-text">
+                <strong>Phone</strong>
+                <span>(303) 974-0317</span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="detail-icon">
+                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="detail-text">
+                <strong>Email</strong>
+                <span>trenchcore19@gmail.com</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-area">
+            <h4>Service Area</h4>
+            <p>We serve communities throughout Colorado, from the Front Range to the Western Slope and beyond.</p>
+          </div>
+        </div>
+
+        <!-- RIGHT: Form -->
+        <div class="quote-form-wrap">
+          <h3>Request Your Free Estimate</h3>
+          <p>Fields marked with <span style="color:#d9534f;">*</span> are required.</p>
+
+          <form id="quoteForm" novalidate>
+            <div class="form-grid">
+
+              <div class="form-group">
+                <label for="firstName">First Name <span class="required">*</span></label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" required />
+              </div>
+
+              <div class="form-group">
+                <label for="lastName">Last Name <span class="required">*</span></label>
+                <input type="text" id="lastName" name="lastName" placeholder="Smith" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="(303) 555-0100" required />
+              </div>
+
+              <div class="form-group full">
+                <label for="address">Project Address</label>
+                <input type="text" id="address" name="address" placeholder="123 Main St, Boulder, CO 80302" />
+              </div>
+
+              <div class="form-group full">
+                <label for="serviceType">Service Needed <span class="required">*</span></label>
+                <select id="serviceType" name="serviceType" required>
+                  <option value="" disabled selected>Select a service...</option>
+                  <option value="trenching">Trenching &amp; Excavation</option>
+                  <option value="irrigation">Irrigation System Installation</option>
+                  <option value="grading">Landscape Grading &amp; Leveling</option>
+                  <option value="drainage">Drainage Solutions</option>
+                  <option value="utility">Utility Line Installation</option>
+                  <option value="hardscaping">Hardscaping &amp; Outdoor Features</option>
+                  <option value="multiple">Multiple Services</option>
+                  <option value="other">Other / Not Sure</option>
+                </select>
+              </div>
+
+              <div class="form-group full">
+                <label for="projectSize">Approximate Project Size</label>
+                <select id="projectSize" name="projectSize">
+                  <option value="" disabled selected>Select a size...</option>
+                  <option value="small">Small</option>
+                  <option value="medium">Medium</option>
+                  <option value="large">Large</option>
+                  <option value="commercial">Commercial / Major Project</option>
+                  <option value="unsure">I'm Not Sure Yet</option>
+                </select>
+              </div>
+
+              <div class="form-group full">
+                <label>When do you need this done?</label>
+                <div class="checkbox-group">
+                  <label class="checkbox-label">
+                    <input type="radio" name="timeline" value="asap" /> As soon as possible
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="radio" name="timeline" value="month" /> Within the next month
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="radio" name="timeline" value="season" /> This season
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="radio" name="timeline" value="planning" /> Just planning ahead
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group full">
+                <label for="description">Project Description <span class="required">*</span></label>
+                <textarea id="description" name="description" placeholder="Please describe your project in as much detail as possible — dimensions, current conditions, goals, any special considerations, etc." required></textarea>
+              </div>
+
+              <div class="form-group full">
+                <label>How did you hear about us?</label>
+                <select name="referral">
+                  <option value="" disabled selected>Select an option...</option>
+                  <option>Google Search</option>
+                  <option>Google Maps</option>
+                  <option>Yelp</option>
+                  <option>Nextdoor</option>
+                  <option>Facebook</option>
+                  <option>Friend or Neighbor Referral</option>
+                  <option>Saw our truck/yard sign</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div class="form-group full">
+                <label class="checkbox-label" style="font-size:0.85rem;color:#555;">
+                  <input type="checkbox" name="consent" required />
+                  I agree to be contacted by TrenchCore regarding my quote request. We never share your information with third parties.
+                </label>
+              </div>
+
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary">Send My Quote Request</button>
+              <p class="form-note">We typically respond within 1 business day. For urgent needs, please call us directly at (303) 974-0317.</p>
+            </div>
+          </form>
+
+          <div id="formSuccess" class="form-success">
+            <div class="success-icon">
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3>Quote Request Received!</h3>
+            <p>Thank you for reaching out. A member of our team will review your project details and contact you within one business day.</p>
+            <p style="margin-top:1rem;font-size:0.88rem;color:#aaa;">In the meantime, feel free to call us at <strong style="color:#555;">(303) 974-0317</strong> if you have any questions.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAP ===== -->
+  <div class="map-section">
+    <div class="map-placeholder">
+      <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <p>Embed Google Map Here</p>
+      <span style="font-size:0.75rem;color:#bbb;">Replace this placeholder with an embedded Google Maps iframe</span>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT / TEAM PREVIEW ===== -->
+  <section style="background:var(--off-white);padding:6rem 0;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Our Team</span>
+        <h2>Built by People Who Love This Work</h2>
+        <p>TrenchCore was founded in 2008 by Boulder native Marcus Webb after 10 years working in commercial excavation across Colorado. Today, our crew of 12 certified operators and landscape professionals brings that same passion to every job.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3rem;" class="team-grid">
+
+        <div style="text-align:center;">
+          <div class="img-placeholder" style="aspect-ratio:1;border-radius:50%;max-width:200px;margin:0 auto 1.25rem;">
+            <svg class="ph-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            <span class="ph-sub" style="font-size:0.68rem;">Headshot Photo</span>
+          </div>
+          <h3 style="font-size:1.1rem;margin-bottom:0.25rem;">Marcus Webb</h3>
+          <p style="font-size:0.82rem;color:var(--tan);font-weight:600;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:0.5rem;">Founder &amp; Lead Operator</p>
+          <p style="font-size:0.88rem;color:#777;">15+ years in Colorado excavation. Licensed Class A CDL operator and OSHA-30 certified.</p>
+        </div>
+
+        <div style="text-align:center;">
+          <div class="img-placeholder" style="aspect-ratio:1;border-radius:50%;max-width:200px;margin:0 auto 1.25rem;">
+            <svg class="ph-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            <span class="ph-sub" style="font-size:0.68rem;">Headshot Photo</span>
+          </div>
+          <h3 style="font-size:1.1rem;margin-bottom:0.25rem;">Carla Romero</h3>
+          <p style="font-size:0.82rem;color:var(--tan);font-weight:600;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:0.5rem;">Landscape Designer</p>
+          <p style="font-size:0.88rem;color:#777;">Colorado State University landscape architecture graduate specializing in drought-tolerant design.</p>
+        </div>
+
+        <div style="text-align:center;">
+          <div class="img-placeholder" style="aspect-ratio:1;border-radius:50%;max-width:200px;margin:0 auto 1.25rem;">
+            <svg class="ph-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            <span class="ph-sub" style="font-size:0.68rem;">Headshot Photo</span>
+          </div>
+          <h3 style="font-size:1.1rem;margin-bottom:0.25rem;">Derek Hollis</h3>
+          <p style="font-size:0.82rem;color:var(--tan);font-weight:600;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:0.5rem;">Project Manager</p>
+          <p style="font-size:0.88rem;color:#777;">Manages scheduling, permits, and client communication to keep every project on track.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Ready to Get Started?</h2>
+      <p>Fill out the form above or call us directly. Free estimates, always.</p>
+      <div class="cta-actions">
+        <a href="#quoteForm" class="btn btn-tan">Fill Out the Form</a>
+        <a href="tel:+13039740317" class="btn btn-outline">Call (303) 974-0317</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-name">TrenchCore</div>
+          <div class="logo-tag">Trenching &amp; Landscaping</div>
+          <p>Colorado's ground-up experts. Licensed, insured, and committed to quality work since 2008.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Trenching &amp; Excavation</a></li>
+            <li><a href="services.html">Irrigation Systems</a></li>
+            <li><a href="services.html">Landscape Grading</a></li>
+            <li><a href="services.html">Utility Lines</a></li>
+            <li><a href="services.html">Drainage Solutions</a></li>
+            <li><a href="services.html">Hardscaping</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="contact.html">About Us</a></li>
+            <li><a href="contact.html">Our Team</a></li>
+            <li><a href="contact.html">Gallery</a></li>
+            <li><a href="contact.html">Get a Quote</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+            <span>(303) 974-0317</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>info@trenchcore.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Boulder, CO<br>Serving all of Colorado</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 TrenchCore LLC. All rights reserved.</span>
+        <span>Licensed &amp; Insured in Colorado &nbsp;|&nbsp; <a href="privacy-policy.html">Privacy Policy</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <style>
+    @media (max-width: 768px) {
+      .team-grid { grid-template-columns: 1fr !important; }
+    }
+    @media (max-width: 1024px) {
+      .team-grid { grid-template-columns: 1fr 1fr !important; }
+    }
+  </style>
+</body>
+</html>
