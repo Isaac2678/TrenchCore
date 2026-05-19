@@ -2058,14 +2058,31 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.55rem); letter-spacing: 0em; }
   .hero-actions { flex-direction: column; }
   .hero-actions .btn { width: 100%; justify-content: center; }
 
-  /* Show only the main photo — 3 stacked photos is too much on mobile */
+  /* Text first on mobile — override the tablet order: -1 */
+  .hero-visual {
+    order: 1;
+    position: relative;
+  }
+
+  /* Subtle bottom fade to blend photo into the dark background */
+  .hero-visual::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 55%;
+    background: linear-gradient(to bottom, transparent, var(--ink));
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /* Show only the main photo — hide stack and badge on mobile */
   .hero-photo-layout { grid-template-columns: 1fr; }
   .hero-photo-stack  { display: none; }
   .hero-photo-badge  { display: none; }
 
   .hero-photo-main {
     min-height: 0;
-    height: clamp(200px, 52vw, 260px);
+    height: clamp(160px, 45vw, 220px);
   }
 
   /* — About — */
