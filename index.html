@@ -3,25 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TrenchCore — Trenching & Landscaping | Colorado</title>
+  <title>TrenchCore — Trenching & Excavation | Colorado</title>
   <meta name="description" content="Professional trenching, excavation, and landscaping services throughout Colorado. Licensed, insured, and locally owned since 2008." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700;800&family=IBM+Plex+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <!-- ===== NAVIGATION ===== -->
   <nav class="nav">
     <div class="container nav-inner">
       <a href="index.html" class="nav-logo">
-        <img src="FullLogo_transparent.PNG" alt="TrenchCore" class="nav-logo-img" />
+        <img src="FullLogo_transparentwithouttext.PNG" alt="" class="nav-logo-img" />
+        <img src="logoText.PNG" alt="TrenchCore" class="nav-logo-text" />
       </a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">About Us</a></li>
+        <li><a href="index.html#about">About</a></li>
         <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
       </ul>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
@@ -32,312 +35,317 @@
     </div>
   </nav>
 
+  <main id="main-content">
+
   <!-- ===== HERO ===== -->
   <section class="hero">
-    <div class="hero-bg">
-      <div class="hero-image-placeholder">
-        <div class="placeholder-label">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-          <p style="margin-top:0.75rem;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;">Background Photo<br>Recommended Size: 1920×1080</p>
-        </div>
-      </div>
-    </div>
+    <div class="hero-inner container">
 
-    <div class="container">
+      <!-- Left: copy -->
       <div class="hero-content">
-        <div class="hero-eyebrow">
-          <span>Colorado's Trusted Excavation Experts</span>
-        </div>
-        <h1>We Dig Deep So You Can <em>Build Better</em></h1>
-        <p>Professional trenching, utility installation, and landscaping services throughout Colorado. Locally owned, fully licensed, and built on 18+ years of Colorado craftsmanship.</p>
+        <p class="hero-eyebrow">Colorado &nbsp;·&nbsp; Licensed &amp; Insured &nbsp;·&nbsp; Est. 2008</p>
+        <h1>We Break<br>Ground.</h1>
+        <p class="hero-sub">Professional trenching, excavation, and landscaping throughout Colorado. Built on 18+ years of precision work — residential to large-scale commercial.</p>
         <div class="hero-actions">
-          <a href="contact.html" class="btn btn-primary">Request a Free Quote</a>
-          <a href="services.html" class="btn btn-outline">View Our Services</a>
+          <a href="contact.html" class="btn btn-steel">Request a Free Quote</a>
+          <a href="tel:+13039740317" class="btn btn-outline-chalk">(303) 974-0317</a>
         </div>
       </div>
-    </div>
 
-    <div class="hero-stats">
-      <div class="container">
-        <div class="stat">
-          <div class="stat-num">500+</div>
-          <div class="stat-label">Projects Completed</div>
+      <!-- Right: engineering cross-section illustration -->
+      <div class="hero-visual">
+        <div class="hero-photo-layout" aria-label="Trenching and excavation work photos">
+          <figure class="hero-photo hero-photo-main">
+            <img
+              src="https://images.pexels.com/photos/20296265/pexels-photo-20296265.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              alt="Excavator trenching at a construction site behind temporary fencing"
+            />
+          </figure>
+
+          <div class="hero-photo-stack">
+            <figure class="hero-photo hero-photo-small">
+              <img
+                src="https://images.pexels.com/photos/14452156/pexels-photo-14452156.jpeg?auto=compress&cs=tinysrgb&w=900"
+                alt="Large excavator on a dirt excavation site under a blue sky"
+              />
+            </figure>
+
+            <figure class="hero-photo hero-photo-small">
+              <img
+                src="https://images.pexels.com/photos/34229738/pexels-photo-34229738.jpeg?auto=compress&cs=tinysrgb&w=900"
+                alt="Tracked excavator on an active trenching and groundwork site"
+              />
+            </figure>
+          </div>
+
+          <div class="hero-photo-badge">
+            <span class="hero-photo-badge-label">In The Field</span>
+            <strong>Real trenching crews and active job sites.</strong>
+          </div>
         </div>
-        <div class="stat">
-          <div class="stat-num">18+</div>
-          <div class="stat-label">Years in Business</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">100%</div>
-          <div class="stat-label">Licensed &amp; Insured</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">4.9★</div>
-          <div class="stat-label">Google Reviews</div>
-        </div>
+        <svg class="trench-diagram" viewBox="0 0 440 522" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Soil layer backgrounds -->
+          <rect x="0" y="0" width="440" height="165" fill="#201d16"/>
+          <rect x="0" y="165" width="440" height="175" fill="#181510"/>
+          <rect x="0" y="340" width="440" height="162" fill="#0f121a"/>
+          <!-- Trench cutout (dark) -->
+          <rect x="165" y="0" width="110" height="432" fill="#090b11"/>
+          <!-- Layer dividers outside trench -->
+          <line x1="0" y1="165" x2="165" y2="165" stroke="#3a5066" stroke-width="0.8" opacity="0.45"/>
+          <line x1="275" y1="165" x2="440" y2="165" stroke="#3a5066" stroke-width="0.8" opacity="0.45"/>
+          <line x1="0" y1="340" x2="165" y2="340" stroke="#2d3f52" stroke-width="0.8" opacity="0.35"/>
+          <line x1="275" y1="340" x2="440" y2="340" stroke="#2d3f52" stroke-width="0.8" opacity="0.35"/>
+          <!-- Trench walls (steel accent) -->
+          <line x1="165" y1="0" x2="165" y2="432" stroke="var(--steel,#E8972A)" stroke-width="1.5" class="trench-wall"/>
+          <line x1="275" y1="0" x2="275" y2="432" stroke="var(--steel,#E8972A)" stroke-width="1.5" class="trench-wall trench-wall-right"/>
+          <!-- Trench bottom -->
+          <line x1="165" y1="432" x2="275" y2="432" stroke="var(--steel,#E8972A)" stroke-width="1.5" opacity="0.65"/>
+          <!-- Ground surface lines -->
+          <line x1="0" y1="1" x2="165" y2="1" stroke="var(--steel,#E8972A)" stroke-width="1.5" opacity="0.45"/>
+          <line x1="275" y1="1" x2="440" y2="1" stroke="var(--steel,#E8972A)" stroke-width="1.5" opacity="0.45"/>
+          <!-- Utility pipe at bottom of trench -->
+          <circle cx="220" cy="457" r="19" stroke="var(--steel,#E8972A)" stroke-width="2" fill="#090b11"/>
+          <circle cx="220" cy="457" r="11" fill="rgba(77,130,184,0.14)"/>
+          <path d="M212 450 A11 11 0 0 1 228 450" stroke="var(--steel,#E8972A)" stroke-width="0.8" opacity="0.38"/>
+          <!-- Layer labels -->
+          <text x="22" y="84"  fill="#8a7a5e" font-size="8.5" font-family="'IBM Plex Sans',monospace" letter-spacing="2.5" font-weight="600" opacity="0.6">TOPSOIL</text>
+          <text x="22" y="260" fill="#756751" font-size="8.5" font-family="'IBM Plex Sans',monospace" letter-spacing="2.5" font-weight="600" opacity="0.55">SUBSOIL</text>
+          <text x="22" y="415" fill="#4d6175" font-size="8.5" font-family="'IBM Plex Sans',monospace" letter-spacing="2.5" font-weight="600" opacity="0.55">BEDROCK</text>
+          <!-- Topsoil texture dots -->
+          <circle cx="50"  cy="40"  r="1.4" fill="#3d3526" opacity="0.45"/>
+          <circle cx="84"  cy="66"  r="1.4" fill="#3d3526" opacity="0.4"/>
+          <circle cx="37"  cy="98"  r="1.2" fill="#3d3526" opacity="0.4"/>
+          <circle cx="112" cy="35"  r="1.2" fill="#3d3526" opacity="0.35"/>
+          <circle cx="72"  cy="130" r="1.4" fill="#3d3526" opacity="0.4"/>
+          <circle cx="130" cy="112" r="1.2" fill="#3d3526" opacity="0.35"/>
+          <circle cx="308" cy="52"  r="1.4" fill="#3d3526" opacity="0.4"/>
+          <circle cx="375" cy="80"  r="1.2" fill="#3d3526" opacity="0.4"/>
+          <circle cx="342" cy="122" r="1.4" fill="#3d3526" opacity="0.35"/>
+          <circle cx="416" cy="46"  r="1.2" fill="#3d3526" opacity="0.35"/>
+          <circle cx="396" cy="140" r="1.4" fill="#3d3526" opacity="0.4"/>
+          <!-- Subsoil dashes -->
+          <line x1="26"  y1="196" x2="58"  y2="196" stroke="#5a4e3c" stroke-width="0.8" opacity="0.35"/>
+          <line x1="70"  y1="222" x2="112" y2="222" stroke="#5a4e3c" stroke-width="0.8" opacity="0.3"/>
+          <line x1="30"  y1="250" x2="65"  y2="250" stroke="#5a4e3c" stroke-width="0.8" opacity="0.3"/>
+          <line x1="92"  y1="288" x2="132" y2="288" stroke="#5a4e3c" stroke-width="0.8" opacity="0.32"/>
+          <line x1="40"  y1="314" x2="82"  y2="314" stroke="#5a4e3c" stroke-width="0.8" opacity="0.3"/>
+          <line x1="296" y1="200" x2="332" y2="200" stroke="#5a4e3c" stroke-width="0.8" opacity="0.3"/>
+          <line x1="350" y1="232" x2="396" y2="232" stroke="#5a4e3c" stroke-width="0.8" opacity="0.32"/>
+          <line x1="306" y1="272" x2="342" y2="272" stroke="#5a4e3c" stroke-width="0.8" opacity="0.3"/>
+          <line x1="370" y1="302" x2="416" y2="302" stroke="#5a4e3c" stroke-width="0.8" opacity="0.3"/>
+          <!-- Bedrock cracks -->
+          <path d="M32 366 L56 380 L42 400 L70 416" stroke="#2a3a4a" stroke-width="1" opacity="0.5" fill="none"/>
+          <path d="M86 362 L102 382 L88 404" stroke="#2a3a4a" stroke-width="0.8" opacity="0.4" fill="none"/>
+          <path d="M340 375 L368 390 L354 410 L384 428" stroke="#2a3a4a" stroke-width="1" opacity="0.5" fill="none"/>
+          <path d="M396 364 L416 387 L400 412" stroke="#2a3a4a" stroke-width="0.8" opacity="0.4" fill="none"/>
+          <!-- Depth measurement -->
+          <line x1="307" y1="4" x2="307" y2="428" stroke="var(--steel,#E8972A)" stroke-width="0.8" stroke-dasharray="3 4" opacity="0.32"/>
+          <polyline points="303,12 307,4 311,12"   stroke="var(--steel,#E8972A)" stroke-width="0.8" fill="none" opacity="0.38"/>
+          <polyline points="303,420 307,428 311,420" stroke="var(--steel,#E8972A)" stroke-width="0.8" fill="none" opacity="0.38"/>
+          <!-- Engineering corner marks -->
+          <path d="M0 22 L0 0 L22 0"   stroke="var(--steel,#E8972A)" stroke-width="1.5" opacity="0.5"/>
+          <path d="M418 0 L440 0 L440 22"   stroke="var(--steel,#E8972A)" stroke-width="1.5" opacity="0.5"/>
+          <path d="M0 478 L0 500 L22 500"   stroke="var(--steel,#E8972A)" stroke-width="1.5" opacity="0.5"/>
+          <path d="M418 500 L440 500 L440 478" stroke="var(--steel,#E8972A)" stroke-width="1.5" opacity="0.5"/>
+          <!-- Title block -->
+          <rect x="0" y="502" width="440" height="20" fill="#0d1219" opacity="0.85"/>
+          <line x1="0" y1="502" x2="440" y2="502" stroke="var(--steel,#E8972A)" stroke-width="0.8" opacity="0.32"/>
+          <text x="220" y="515" fill="var(--steel,#E8972A)" font-size="6.5" font-family="'IBM Plex Sans',monospace" text-anchor="middle" letter-spacing="2.5" font-weight="600" opacity="0.48">TRENCHCORE · CROSS-SECTION VIEW · SCALE 1:20</text>
+        </svg>
+      </div>
+
+    </div><!-- .hero-inner -->
+
+
+  </section>
+
+  <!-- ===== SERVICES (HOME) ===== -->
+  <section class="services-home" id="services">
+    <div class="container">
+      <div class="section-intro">
+        <span class="label label--ink">What We Do</span>
+        <h2>Excavation &amp; Landscaping,<br>Done Right</h2>
+        <p>From the first trench to the final stone — we handle every phase with precision and care.</p>
+      </div>
+
+      <div class="service-list">
+
+        <a href="services.html#trenching" class="service-row reveal">
+          <span class="service-row-name">Trenching &amp; Excavation</span>
+          <span class="service-row-desc">Precision cuts for utilities, drainage &amp; foundations — done right the first time</span>
+          <svg class="service-row-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+
+        <a href="services.html#irrigation" class="service-row reveal">
+          <span class="service-row-name">Irrigation Systems</span>
+          <span class="service-row-desc">Custom drip &amp; sprinkler design built for Colorado's altitude and seasonal conditions</span>
+          <svg class="service-row-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+
+        <a href="services.html#grading" class="service-row reveal">
+          <span class="service-row-name">Landscape Grading</span>
+          <span class="service-row-desc">Drainage correction, erosion control &amp; site prep using laser-guided equipment</span>
+          <svg class="service-row-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+
+        <a href="services.html#utility" class="service-row reveal">
+          <span class="service-row-name">Utility Line Installation</span>
+          <span class="service-row-desc">Water, gas, electric &amp; fiber conduit — code-compliant, permit-ready</span>
+          <svg class="service-row-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+
+        <a href="services.html#drainage" class="service-row reveal">
+          <span class="service-row-name">Drainage Solutions</span>
+          <span class="service-row-desc">French drains, dry creek beds &amp; surface water management for Colorado terrain</span>
+          <svg class="service-row-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+
+        <a href="services.html#hardscaping" class="service-row reveal">
+          <span class="service-row-name">Hardscaping</span>
+          <span class="service-row-desc">Patios, retaining walls &amp; stone features built to complement Colorado's landscape</span>
+          <svg class="service-row-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+
+      </div>
+
+      <div class="section-cta">
+        <a href="services.html" class="btn btn-outline-chalk">View All Services</a>
       </div>
     </div>
   </section>
 
-  <!-- ===== ABOUT STRIP ===== -->
-  <section class="about-strip">
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
     <div class="container">
-      <div>
-        <div class="about-text">
-          <span class="section-label">About TrenchCore</span>
-          <h2>Colorado's Ground-Up Experts Since 2008</h2>
-          <p>From residential irrigation lines to large-scale commercial excavation, TrenchCore has been shaping landscapes across Colorado for over 18 years. We bring precision, care, and deep local knowledge to every project — big or small.</p>
-          <p>Our team of certified operators uses modern equipment to get the job done efficiently while respecting your property and the surrounding environment.</p>
-          <a href="contact.html" class="btn btn-primary" style="margin-top:0.75rem;">Meet Our Team</a>
-        </div>
-      </div>
-      <div class="about-image">
-        <div class="img-placeholder">
-          <svg class="ph-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-          <span class="ph-text">Team / Company Photo</span>
-          <span class="ph-sub">Recommended: 800×600px</span>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ===== SERVICES PREVIEW ===== -->
-  <section class="services-preview">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">What We Do</span>
-        <h2>Comprehensive Excavation &amp; Landscaping Services</h2>
-        <p>From breaking ground to the finishing touches, we handle every phase of your outdoor project.</p>
-      </div>
+      <div class="about-content">
+        <span class="label label--steel">About TrenchCore</span>
+        <h2>Colorado's Ground-Up Experts Since 2008</h2>
+        <p>From residential irrigation lines to large-scale commercial excavation, TrenchCore has been shaping landscapes across Colorado for over 18 years. We bring precision, care, and deep local knowledge to every project — big or small.</p>
+        <p>Our team of certified operators uses modern equipment to get the job done efficiently while respecting your property and the surrounding environment.</p>
 
-      <div class="services-grid">
-
-        <div class="service-card">
-          <div class="service-card-image">
-            <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-            <span style="font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;">Project Photo</span>
-          </div>
-          <div class="service-card-body">
-            <h3>Trenching &amp; Excavation</h3>
-            <p>Precision trenching for utilities, drainage, irrigation, and foundations. We dig it right the first time.</p>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-card-image">
-            <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-            <span style="font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;">Project Photo</span>
-          </div>
-          <div class="service-card-body">
-            <h3>Irrigation Systems</h3>
-            <p>Design and installation of efficient, water-smart irrigation systems for residential and commercial properties.</p>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-card-image">
-            <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-            <span style="font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;">Project Photo</span>
-          </div>
-          <div class="service-card-body">
-            <h3>Landscape Grading</h3>
-            <p>Expert land grading and leveling to improve drainage, prevent erosion, and create a solid foundation for any project.</p>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-card-image">
-            <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-            <span style="font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;">Project Photo</span>
-          </div>
-          <div class="service-card-body">
-            <h3>Utility Line Installation</h3>
-            <p>Safe and code-compliant installation of water, gas, electric, and fiber conduit lines for new builds and retrofits.</p>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-card-image">
-            <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-            <span style="font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;">Project Photo</span>
-          </div>
-          <div class="service-card-body">
-            <h3>Drainage Solutions</h3>
-            <p>French drains, dry creek beds, and surface drainage systems designed for Colorado's unique climate and terrain.</p>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-card-image">
-            <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-            <span style="font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;">Project Photo</span>
-          </div>
-          <div class="service-card-body">
-            <h3>Hardscaping</h3>
-            <p>Patios, retaining walls, pathways, and stone features that blend beautifully with Colorado's natural surroundings.</p>
-          </div>
-        </div>
-
-      </div>
-
-      <div style="text-align:center;margin-top:3rem;">
-        <a href="services.html" class="btn btn-primary">See All Services</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== GALLERY ===== -->
-  <section class="gallery">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Our Work</span>
-        <h2>Recent Projects Across Colorado</h2>
-        <p>Each job is a reflection of our commitment to quality, precision, and leaving your property better than we found it.</p>
-      </div>
-
-      <div class="gallery-grid">
-        <div class="gallery-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" width="40" height="40"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-          <span class="ph-text">Featured Project Photo<br><small style="font-size:0.7rem;opacity:0.6;">Recommended: 800×900px</small></span>
-        </div>
-        <div class="gallery-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" width="32" height="32"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-          <span class="ph-text">Project Photo</span>
-        </div>
-        <div class="gallery-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" width="32" height="32"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-          <span class="ph-text">Project Photo</span>
-        </div>
-        <div class="gallery-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" width="32" height="32"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-          <span class="ph-text">Project Photo</span>
-        </div>
-        <div class="gallery-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" width="32" height="32"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-          <span class="ph-text">Project Photo</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== WHY US ===== -->
-  <section class="why-us">
-    <div class="container">
-      <div class="why-grid">
-        <div class="why-image">
-          <div class="img-placeholder" style="aspect-ratio:3/4;">
-            <svg class="ph-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-            <span class="ph-text">Equipment / Action Shot</span>
-            <span class="ph-sub">Recommended: 600×800px</span>
-          </div>
-        </div>
-        <div>
-          <span class="section-label">Why TrenchCore</span>
-          <h2>Colorado Tough. Colorado Proud.</h2>
-          <div class="why-list">
-            <div class="why-item">
-              <div class="why-icon">
-                <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-              </div>
-              <div>
-                <h4>Fully Licensed &amp; Insured</h4>
-                <p>We carry full liability and workers' comp insurance. Your property — and our crew — are always protected.</p>
-              </div>
+        <div class="why-list">
+          <div class="why-item reveal">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
             </div>
-            <div class="why-item">
-              <div class="why-icon">
-                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              </div>
-              <div>
-                <h4>On-Time, Every Time</h4>
-                <p>We respect your schedule. Our project managers keep timelines tight and communication clear from start to finish.</p>
-              </div>
+            <div>
+              <h4>Fully Licensed &amp; Insured</h4>
+              <p>Full liability and workers' comp coverage. Your property and our crew are always protected.</p>
             </div>
-            <div class="why-item">
-              <div class="why-icon">
-                <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              </div>
-              <div>
-                <h4>Environmentally Responsible</h4>
-                <p>We follow best practices for soil conservation and site restoration, keeping Colorado's natural beauty intact.</p>
-              </div>
+          </div>
+
+          <div class="why-item reveal">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </div>
-            <div class="why-item">
-              <div class="why-icon">
-                <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-              </div>
-              <div>
-                <h4>Local Experts</h4>
-                <p>We know Colorado's soil, permits, utility networks, and weather statewide. That local knowledge saves you time and money.</p>
-              </div>
+            <div>
+              <h4>On-Time, Every Time</h4>
+              <p>Tight timelines and clear communication from first call to final cleanup.</p>
+            </div>
+          </div>
+
+          <div class="why-item reveal">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div>
+              <h4>Local Colorado Experts</h4>
+              <p>We know Colorado's soil, permits, and utility networks. That knowledge saves you time and money.</p>
+            </div>
+          </div>
+
+          <div class="why-item reveal">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <h4>Environmentally Responsible</h4>
+              <p>Best practices for soil conservation and site restoration — keeping Colorado's land intact.</p>
             </div>
           </div>
         </div>
+
+        <a href="contact.html" class="btn btn-outline-chalk" style="margin-top:2.5rem;">Talk to Our Team</a>
       </div>
+
+      <div class="about-visual">
+        <div class="about-photo-grid" aria-label="Trenching machines and active groundwork sites">
+          <figure class="about-photo about-photo-wide">
+            <img
+              src="https://images.pexels.com/photos/25559747/pexels-photo-25559747.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              alt="Crawler excavator digging and moving soil on an active work site"
+            />
+          </figure>
+
+          <figure class="about-photo about-photo-left">
+            <img
+              src="https://images.pexels.com/photos/27130444/pexels-photo-27130444.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              alt="Excavator digging on a field beside a trenching area"
+            />
+          </figure>
+
+          <figure class="about-photo about-photo-right">
+            <img
+              src="https://images.pexels.com/photos/15370211/pexels-photo-15370211.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              alt="Heavy excavator parked at a construction and trenching site"
+            />
+          </figure>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- ===== TESTIMONIALS ===== -->
   <section class="testimonials">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label">Customer Reviews</span>
-        <h2>What Colorado Homeowners Are Saying</h2>
+      <div class="section-intro">
+        <span class="label label--ink">Client Reviews</span>
+        <h2>What Colorado Is Saying</h2>
       </div>
-      <div class="testimonials-grid">
 
-        <div class="testimonial-card">
-          <div class="stars">
-            <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          </div>
-          <p>"TrenchCore installed our irrigation system and did a phenomenal job. The crew was professional, fast, and cleaned up everything perfectly. Highly recommend to any Colorado homeowner."</p>
+      <div class="testimonials-editorial">
+
+        <blockquote class="testimonial-lead reveal">
+          <div class="testimonial-mark" aria-hidden="true">&ldquo;</div>
+          <p>TrenchCore installed our irrigation system and did a phenomenal job. The crew was professional, fast, and cleaned up everything perfectly. Highly recommend to any Colorado homeowner.</p>
           <div class="reviewer">
-            <div class="reviewer-avatar">SM</div>
+            <div class="reviewer-avatar" aria-hidden="true">SM</div>
             <div>
               <div class="reviewer-name">Sarah M.</div>
               <div class="reviewer-loc">Fort Collins, CO</div>
             </div>
+            <span class="sr-only">— 5 out of 5 stars</span>
           </div>
-        </div>
+        </blockquote>
 
-        <div class="testimonial-card">
-          <div class="stars">
-            <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          </div>
-          <p>"We needed a French drain installed fast before the rainy season. TrenchCore quoted us fairly, started on time, and finished a full day early. Our basement has been dry ever since."</p>
-          <div class="reviewer">
-            <div class="reviewer-avatar">JK</div>
-            <div>
-              <div class="reviewer-name">James K.</div>
-              <div class="reviewer-loc">Lakewood, CO</div>
-            </div>
-          </div>
-        </div>
+        <div class="testimonials-stack">
 
-        <div class="testimonial-card">
-          <div class="stars">
-            <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          </div>
-          <p>"Used TrenchCore for a commercial project on Broadway. Their crew was knowledgeable, respectful of surrounding businesses, and the finished work exceeded our expectations. Will use again."</p>
-          <div class="reviewer">
-            <div class="reviewer-avatar">LP</div>
-            <div>
-              <div class="reviewer-name">Linda P.</div>
-              <div class="reviewer-loc">Colorado Springs, CO</div>
+          <blockquote class="testimonial-compact reveal">
+            <p>We needed a French drain installed fast before the rainy season. TrenchCore quoted us fairly, started on time, and finished a full day early. Our basement has been dry ever since.</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar" aria-hidden="true">JK</div>
+              <div>
+                <div class="reviewer-name">James K.</div>
+                <div class="reviewer-loc">Lakewood, CO</div>
+              </div>
+              <span class="sr-only">— 5 out of 5 stars</span>
             </div>
-          </div>
+          </blockquote>
+
+          <blockquote class="testimonial-compact reveal">
+            <p>Used TrenchCore for a commercial project on Broadway. Their crew was knowledgeable, respectful of surrounding businesses, and the finished work exceeded our expectations. Will use again.</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar" aria-hidden="true">LP</div>
+              <div>
+                <div class="reviewer-name">Linda P.</div>
+                <div class="reviewer-loc">Colorado Springs, CO</div>
+              </div>
+              <span class="sr-only">— 5 out of 5 stars</span>
+            </div>
+          </blockquote>
+
         </div>
 
       </div>
@@ -347,61 +355,81 @@
   <!-- ===== CTA BANNER ===== -->
   <section class="cta-banner">
     <div class="container">
-      <h2>Ready to Start Your Project?</h2>
-      <p>Get a free, no-obligation quote from Colorado's most trusted trenching and landscaping team.</p>
+      <h2>Ready to Break Ground?</h2>
+      <p>Get a free, no-obligation quote from Colorado's most trusted trenching and excavation team.</p>
       <div class="cta-actions">
-        <a href="contact.html" class="btn btn-tan">Request a Free Quote</a>
-        <a href="tel:+13039740317" class="btn btn-outline">Call (303) 974-0317</a>
+        <a href="contact.html" class="btn btn-steel">Start Your Project</a>
+        <a href="tel:+13039740317" class="btn btn-outline-chalk">Call (303) 974-0317</a>
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
+
         <div class="footer-brand">
           <a href="index.html" class="footer-logo-link">
-            <img src="FullLogo_transparent.PNG" alt="TrenchCore" class="footer-logo-img" />
+            <img src="FullLogo_transparentwithouttext.PNG" alt="" class="footer-logo-img" loading="lazy" />
+            <img src="logoText.PNG" alt="TrenchCore" class="footer-logo-text" loading="lazy" />
           </a>
           <p>Colorado's ground-up experts. Licensed, insured, and committed to quality work since 2008.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" aria-label="Google Reviews">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </a>
+          </div>
         </div>
+
         <div class="footer-col">
           <h4>Services</h4>
           <ul>
-            <li><a href="services.html">Trenching &amp; Excavation</a></li>
-            <li><a href="services.html">Irrigation Systems</a></li>
-            <li><a href="services.html">Landscape Grading</a></li>
-            <li><a href="services.html">Utility Lines</a></li>
-            <li><a href="services.html">Drainage Solutions</a></li>
-            <li><a href="services.html">Hardscaping</a></li>
+            <li><a href="services.html#trenching">Trenching &amp; Excavation</a></li>
+            <li><a href="services.html#irrigation">Irrigation Systems</a></li>
+            <li><a href="services.html#grading">Landscape Grading</a></li>
+            <li><a href="services.html#utility">Utility Lines</a></li>
+            <li><a href="services.html#drainage">Drainage Solutions</a></li>
+            <li><a href="services.html#hardscaping">Hardscaping</a></li>
           </ul>
         </div>
+
         <div class="footer-col">
           <h4>Company</h4>
           <ul>
-            <li><a href="contact.html">About Us</a></li>
-            <li><a href="contact.html">Our Team</a></li>
-            <li><a href="contact.html">Gallery</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="contact.html#team">Our Team</a></li>
             <li><a href="contact.html">Get a Quote</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
           </ul>
         </div>
+
         <div class="footer-col">
           <h4>Contact</h4>
           <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
             <span>(303) 974-0317</span>
           </div>
           <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             <span>trenchcore19@gmail.com</span>
           </div>
           <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>Boulder, CO<br>Serving all of Colorado</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Colorado Front Range &amp; Beyond</span>
           </div>
         </div>
+
       </div>
+
       <div class="footer-bottom">
         <span>&copy; 2026 TrenchCore LLC. All rights reserved.</span>
         <span>Licensed &amp; Insured in Colorado &nbsp;|&nbsp; <a href="privacy-policy.html">Privacy Policy</a></span>
