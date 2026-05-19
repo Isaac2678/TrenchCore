@@ -223,7 +223,9 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.55rem); letter-spacing: 0em; }
   top: 0; left: 0; right: 0;
   z-index: 100;
   padding: 1.4rem 0;
-  transition: background 0.5s var(--ease-out), padding 0.5s var(--ease-out), box-shadow 0.5s var(--ease-out);
+  border-top: 2px solid transparent;
+  transition: background 0.5s var(--ease-out), padding 0.5s var(--ease-out),
+              box-shadow 0.5s var(--ease-out), border-color 0.5s var(--ease-out);
 }
 
 .nav.scrolled {
@@ -231,7 +233,8 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.55rem); letter-spacing: 0em; }
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   padding: 0.85rem 0;
-  box-shadow: 0 1px 0 oklch(74% 0.19 55 / 0.15);
+  border-top-color: var(--steel);
+  box-shadow: 0 1px 0 oklch(74% 0.19 55 / 0.12);
 }
 
 .nav-inner {
@@ -310,6 +313,28 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.55rem); letter-spacing: 0em; }
 }
 .nav-cta:hover { background: var(--steel-light) !important; }
 .nav-cta::after { display: none !important; }
+
+/* Thin vertical divider between nav links and CTA */
+.nav-sep {
+  width: 1px;
+  height: 16px;
+  background: oklch(33% 0.09 248 / 0.55);
+  flex-shrink: 0;
+  pointer-events: none;
+  list-style: none;
+}
+
+/* Phone number in nav — subtle secondary action */
+.nav-phone {
+  font-size: 0.7rem !important;
+  font-weight: 400 !important;
+  color: var(--smoke-dim) !important;
+  letter-spacing: 0.04em !important;
+  text-transform: none !important;
+  transition: color 0.25s !important;
+}
+.nav-phone:hover { color: var(--chalk) !important; }
+.nav-phone::after { display: none !important; }
 
 .nav-toggle {
   display: none;
@@ -2052,8 +2077,26 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.55rem); letter-spacing: 0em; }
 
   .nav-toggle { display: flex; }
 
+  /* — Nav mobile — */
+  .nav-sep { display: none; }
+
+  /* Phone shows as a regular drawer link on mobile */
+  .nav-phone {
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    color: var(--smoke) !important;
+    letter-spacing: 0.08em !important;
+    text-transform: none !important;
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--ink-border);
+  }
+
   /* — Hero — */
   .hero h1 { line-height: 1; }
+
+  /* Push content clear of the fixed nav (nav ≈ 90px, give 55px breathing room) */
+  .hero-inner { padding-top: 8.5rem; }
 
   .hero-actions { flex-direction: column; }
   .hero-actions .btn { width: 100%; justify-content: center; }
