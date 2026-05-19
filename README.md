@@ -21,7 +21,8 @@ This repository contains a multi-page brochure site intended for public hosting.
 
 - `index.html`: homepage with hero, services preview, about, testimonials, CTA, and footer
 - `services.html`: detailed service offerings and process overview
-- `contact.html`: quote request form, company contact info, team section, and FAQ content
+- `projects.html`: previous work / project highlights page with image-led examples
+- `contact.html`: quote request form, company contact info, service area content, and FAQ content
 - `privacy-policy.html`: privacy policy and contact details
 - `styles.css`: full site styling, design tokens, layout, animation, and responsive rules
 - `script.js`: mobile nav behavior, active nav state, scroll reveal, anchor scrolling, and quote form submission

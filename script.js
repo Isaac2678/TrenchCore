@@ -82,6 +82,7 @@ if (navToggle && navLinks) {
 // another form backend. Create a free account at formspree.io, create a form,
 // and paste the endpoint URL here.
 const FORM_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+const FORM_ENDPOINT_IS_CONFIGURED = !FORM_ENDPOINT.includes('YOUR_FORM_ID');
 
 const quoteForm = document.getElementById('quoteForm');
 if (quoteForm) {
@@ -136,6 +137,10 @@ if (quoteForm) {
     btn.disabled = true;
 
     try {
+      if (!FORM_ENDPOINT_IS_CONFIGURED) {
+        throw new Error('Quote form endpoint is not configured.');
+      }
+
       const response = await fetch(FORM_ENDPOINT, {
         method: 'POST',
         body: new FormData(this),
@@ -160,7 +165,9 @@ if (quoteForm) {
         errBanner.style.marginBottom = '1rem';
         quoteForm.querySelector('.form-submit').prepend(errBanner);
       }
-      errBanner.textContent = 'Something went wrong sending your request. Please call us directly at (303) 974-0317.';
+      errBanner.textContent = FORM_ENDPOINT_IS_CONFIGURED
+        ? 'Something went wrong sending your request. Please call us directly at (303) 974-0317.'
+        : 'Online quote requests are not connected yet. Please call (303) 974-0317 or email Kevin@trenchcorellc.com.';
     }
   });
 }

@@ -1357,6 +1357,213 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.55rem); letter-spacing: 0em; }
 }
 
 /* ----------------------------------------
+   Previous Work Page
+   ---------------------------------------- */
+.work-hero {
+  min-height: 76vh;
+  display: flex;
+  align-items: end;
+  color: var(--chalk);
+  background:
+    linear-gradient(90deg, oklch(12% 0.05 248 / 0.9) 0%, oklch(12% 0.05 248 / 0.68) 48%, oklch(12% 0.05 248 / 0.18) 100%),
+    url('https://images.pexels.com/photos/20296265/pexels-photo-20296265.jpeg?auto=compress&cs=tinysrgb&w=1800') center / cover;
+  padding: 8rem 0 4rem;
+}
+
+.work-hero .container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 3rem;
+  align-items: end;
+}
+
+.work-hero-copy {
+  max-width: 760px;
+}
+
+.work-hero h1 {
+  max-width: 720px;
+}
+
+.work-hero p {
+  max-width: 600px;
+  margin-top: 1rem;
+  color: var(--smoke);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.work-hero-stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid oklch(96% 0.004 80 / 0.18);
+  background: oklch(12% 0.05 248 / 0.58);
+  backdrop-filter: blur(10px);
+}
+
+.work-hero-stats div {
+  padding: 1.15rem 1.25rem;
+  border-bottom: 1px solid oklch(96% 0.004 80 / 0.14);
+}
+
+.work-hero-stats div:last-child {
+  border-bottom: none;
+}
+
+.work-hero-stats strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2.35rem;
+  line-height: 1;
+  color: var(--steel);
+}
+
+.work-hero-stats span {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--chalk);
+}
+
+.featured-work {
+  background: var(--ink);
+  color: var(--chalk);
+  padding: clamp(5rem, 9vw, 8rem) 0;
+}
+
+.featured-work-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.9fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.featured-work-image {
+  min-height: 480px;
+  overflow: hidden;
+  border-left: 2px solid var(--steel);
+}
+
+.featured-work-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 480px;
+  object-fit: cover;
+}
+
+.featured-work-copy h2 {
+  color: var(--chalk);
+  margin-bottom: 1rem;
+}
+
+.featured-work-copy > p {
+  color: var(--smoke);
+  line-height: 1.8;
+  margin-bottom: 1.8rem;
+}
+
+.work-specs {
+  display: grid;
+  gap: 1px;
+  background: var(--ink-border);
+  margin-bottom: 2rem;
+}
+
+.work-specs div {
+  background: var(--ink-raised);
+  padding: 1rem 1.2rem;
+}
+
+.work-specs dt {
+  color: var(--steel);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+}
+
+.work-specs dd {
+  color: var(--smoke);
+  font-size: 0.9rem;
+}
+
+.work-gallery {
+  background: var(--concrete);
+  padding: clamp(5rem, 9vw, 8rem) 0;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  background: var(--concrete-dark);
+  outline: 2px solid var(--concrete-dark);
+}
+
+.work-card {
+  background: var(--chalk);
+  min-width: 0;
+}
+
+.work-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.work-card-body {
+  padding: 1.5rem;
+}
+
+.work-card-body span {
+  display: inline-block;
+  margin-bottom: 0.65rem;
+  color: var(--steel-dim);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.work-card-body h3 {
+  color: var(--ink-text);
+  margin-bottom: 0.55rem;
+}
+
+.work-card-body p {
+  color: var(--ink-text-mid);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.work-cta {
+  background: var(--ink-raised);
+  color: var(--chalk);
+  padding: clamp(4rem, 7vw, 6rem) 0;
+}
+
+.work-cta .container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2rem;
+  align-items: end;
+}
+
+.work-cta h2 {
+  max-width: 660px;
+}
+
+.work-cta p {
+  max-width: 560px;
+  margin-top: 0.75rem;
+  color: var(--smoke);
+}
+
+/* ----------------------------------------
    Contact Page
    ---------------------------------------- */
 .contact-section {
@@ -1990,8 +2197,28 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.55rem); letter-spacing: 0em; }
   }
 
   .service-grid,
-  .services-grid-full {
+  .services-grid-full,
+  .work-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .work-hero .container,
+  .featured-work-grid,
+  .work-cta .container {
+    grid-template-columns: 1fr;
+  }
+
+  .work-hero-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .work-hero-stats div {
+    border-bottom: none;
+    border-right: 1px solid oklch(96% 0.004 80 / 0.14);
+  }
+
+  .work-hero-stats div:last-child {
+    border-right: none;
   }
 
   .testimonials-editorial {
@@ -2040,56 +2267,80 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.55rem); letter-spacing: 0em; }
     position: fixed;
     top: 0; right: 0;
     height: 100vh;
-    width: min(300px, 85vw);
-    background: var(--ink);
+    width: min(360px, 90vw);
+    background:
+      linear-gradient(180deg, oklch(24% 0.08 248) 0%, var(--ink) 52%, oklch(15% 0.06 248) 100%);
     flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
-    padding: 5rem 2rem 2rem;
+    align-items: stretch;
+    gap: 0.25rem;
+    padding: 5.75rem 1.35rem 1.5rem;
     transform: translateX(110%);
     transition: transform 0.45s var(--ease-out);
     z-index: 99;
-    border-left: 1px solid var(--ink-border);
+    border-left: 1px solid oklch(74% 0.19 55 / 0.18);
+    box-shadow: -24px 0 60px oklch(8% 0.04 248 / 0.5);
     overflow-y: auto;
   }
 
   .nav-links.open { transform: translateX(0); }
 
   .nav-links a {
-    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    font-size: 0.9rem;
     width: 100%;
-    padding: 1rem 0;
-    border-bottom: 1px solid var(--ink-border);
-    letter-spacing: 0.08em;
-    color: var(--smoke);
+    padding: 0.85rem 0.95rem;
+    border: 1px solid transparent;
+    letter-spacing: 0.09em;
+    color: var(--chalk);
+    background: transparent;
   }
 
-  .nav-links a:last-child { border-bottom: none; }
+  .nav-links a::after { display: none; }
+
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: var(--chalk);
+    background: oklch(96% 0.004 80 / 0.06);
+    border-color: oklch(96% 0.004 80 / 0.08);
+  }
 
   .nav-cta {
-    background: transparent !important;
-    color: var(--steel) !important;
-    font-size: 1rem !important;
-    padding: 1rem 0 !important;
-    letter-spacing: 0.08em !important;
-    border-radius: 0 !important;
+    justify-content: center;
+    min-height: 52px;
+    margin-top: 0.55rem;
+    background: var(--steel) !important;
+    color: var(--chalk) !important;
+    font-size: 0.82rem !important;
+    padding: 0.95rem 1rem !important;
+    letter-spacing: 0.1em !important;
+    border-radius: var(--radius) !important;
   }
 
   .nav-toggle { display: flex; }
 
   /* — Nav mobile — */
-  .nav-sep { display: none; }
+  .nav-sep {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 0.75rem 0 0.45rem;
+    background: oklch(96% 0.004 80 / 0.12);
+  }
 
-  /* Phone shows as a regular drawer link on mobile */
   .nav-phone {
-    font-size: 1rem !important;
+    justify-content: center;
+    min-height: 48px;
+    font-size: 0.92rem !important;
     font-weight: 600 !important;
-    color: var(--smoke) !important;
-    letter-spacing: 0.08em !important;
+    color: var(--steel-light) !important;
+    letter-spacing: 0.04em !important;
     text-transform: none !important;
     width: 100%;
-    padding: 1rem 0;
-    border-bottom: 1px solid var(--ink-border);
+    padding: 0.85rem 1rem;
+    border: 1px solid oklch(74% 0.19 55 / 0.2);
+    background: oklch(74% 0.19 55 / 0.07);
   }
 
   /* — Hero — */
@@ -2165,7 +2416,24 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.55rem); letter-spacing: 0em; }
 
   /* — Services detail grid & process — */
   .services-grid-full,
-  .process-steps { grid-template-columns: 1fr; }
+  .process-steps,
+  .work-hero-stats,
+  .work-grid { grid-template-columns: 1fr; }
+
+  .work-hero {
+    min-height: 70vh;
+    padding: 7rem 0 3rem;
+  }
+
+  .work-hero-stats div {
+    border-right: none;
+    border-bottom: 1px solid oklch(96% 0.004 80 / 0.14);
+  }
+
+  .featured-work-image,
+  .featured-work-image img {
+    min-height: 320px;
+  }
 
   .service-detail-card { padding: 2.2rem 1.75rem; }
   .process-step        { padding: 2rem 1.75rem; }
