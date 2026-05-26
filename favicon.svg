@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="10" fill="#1a2240"/>
+  <!-- T -->
+  <rect x="8" y="12" width="22" height="5" rx="1.5" fill="#d97b2a"/>
+  <rect x="16" y="17" width="6" height="22" rx="1.5" fill="#d97b2a"/>
+  <!-- C -->
+  <path d="M37 17 C37 17 34 17 34 24.5 C34 32 37 32 37 32 L44 32 L44 27.5 L38.5 27.5 C38.5 27.5 37 27.5 37 24.5 C37 21.5 38.5 21.5 38.5 21.5 L44 21.5 L44 17 Z" fill="#d97b2a"/>
+  <!-- orange ground line -->
+  <rect x="8" y="44" width="48" height="4" rx="2" fill="#d97b2a" opacity="0.6"/>
+</svg>
