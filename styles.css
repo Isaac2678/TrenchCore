@@ -1442,16 +1442,16 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.55rem); letter-spacing: 0em; }
 }
 
 .featured-work-image {
-  min-height: 480px;
+  height: 480px;
   overflow: hidden;
-  border-left: 2px solid var(--steel);
 }
 
-.featured-work-image img {
+.featured-work-image img,
+.featured-work-image video {
   width: 100%;
   height: 100%;
-  min-height: 480px;
   object-fit: cover;
+  display: block;
 }
 
 .featured-work-copy h2 {
@@ -2430,9 +2430,8 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.55rem); letter-spacing: 0em; }
     border-bottom: 1px solid oklch(96% 0.004 80 / 0.14);
   }
 
-  .featured-work-image,
-  .featured-work-image img {
-    min-height: 320px;
+  .featured-work-image {
+    height: 320px;
   }
 
   .service-detail-card { padding: 2.2rem 1.75rem; }
